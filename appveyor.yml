@@ -12,6 +12,7 @@ platform:
     - x64
 
 install:
+    - ftype Python.File="C:\Windows\py.exe" "%1" %*
     - cmd: assoc .py
     - cmd: ftype Python.File
     - where python
